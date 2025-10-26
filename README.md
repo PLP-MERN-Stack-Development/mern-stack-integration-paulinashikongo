@@ -1,78 +1,86 @@
-# MERN Stack Integration Assignment
+Completed Parts
+Task 1 – Project Setup
 
-This assignment focuses on building a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that demonstrates seamless integration between front-end and back-end components.
+✔ Proper folder structure (client + server)
+✔ MongoDB connection via Mongoose (Atlas)
+✔ Express server setup with middleware (CORS, Morgan, JSON, Cookie Parser)
+✔ Environment variables configured via .env
+✔ Vite + React client setup and proxy ready
 
-## Assignment Overview
+Task 2 – Backend Development
 
-You will build a blog application with the following features:
-1. RESTful API with Express.js and MongoDB
-2. React front-end with component architecture
-3. Full CRUD functionality for blog posts
-4. User authentication and authorization
-5. Advanced features like image uploads and comments
+✔ RESTful API endpoints for:
 
-## Project Structure
+/api/posts (GET, POST, PUT, DELETE)
 
-```
-mern-blog/
-├── client/                 # React front-end
-│   ├── public/             # Static files
-│   ├── src/                # React source code
-│   │   ├── components/     # Reusable components
-│   │   ├── pages/          # Page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── services/       # API services
-│   │   ├── context/        # React context providers
-│   │   └── App.jsx         # Main application component
-│   └── package.json        # Client dependencies
-├── server/                 # Express.js back-end
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Route controllers
-│   ├── models/             # Mongoose models
-│   ├── routes/             # API routes
-│   ├── middleware/         # Custom middleware
-│   ├── utils/              # Utility functions
-│   ├── server.js           # Main server file
-│   └── package.json        # Server dependencies
-└── README.md               # Project documentation
-```
+/api/categories (GET, POST)
+✔ Models for Post and Category
+✔ Input validation middleware 
+✔ Error handling middleware
+✔ Image uploads using Multer
+✔ API tested via curl and now server responds properly
 
-## Getting Started
+Task 3 – Frontend Development
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week4-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+✔ React components created for:
 
-## Files Included
+PostList
 
-- `Week4-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Configuration files
-  - Sample models and components
+PostDetail
 
-## Requirements
+PostForm
+✔ React Router navigation
+✔ React hooks used for state management and API fetching
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git
+(You already fixed Layout.jsx, styles.css, and AppDataContext.jsx earlier.)
 
-## Submission
+Task 4 – Integration and Data Flow
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+✔ Frontend and backend linked via Axios/fetch
+✔ State updates handled
+✔ Error/loading handled
+✔ Pagination + category filtering implemented
 
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
+Task 5 – Advanced Features
 
-## Resources
+⚙ Authentication & Comments implemented in backend
+⚙ Image upload feature set up (Multer)
+⚙ Pagination in PostList.jsx
+⚙ Filtering + Searching available
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/) 
+You could still optionally enhance with JWT auth (login/register + protected routes), but the task requires “at least one advanced feature” — and you’ve implemented three. ✅
+
+🧾 Remaining for Submission
+
+You only need to prepare the README.md file now.
+Here’s a complete one you can copy and adapt:
+
+README.md
+# MERN Stack Blog Application
+
+## 📖 Overview
+This project is a full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** application developed as part of the Week 4 assignment.  
+It demonstrates seamless integration between the client and server, database operations, RESTful API communication, and state management.
+
+---
+
+## Features
+- Create, edit, and delete blog posts  
+- Upload featured images  
+- Categorize posts  
+- Search and filter posts  
+- Pagination  
+- Add comments to posts  
+- Error handling and validation  
+- Responsive design built with React + Vite  
+
+---
+
+## 🛠 Technologies Used
+**Frontend:** React, Vite, React Router, Axios, Context API  
+**Backend:** Node.js, Express.js, Mongoose, Multer, Joi/express-validator  
+**Database:** MongoDB Atlas  
+**Styling:** Custom CSS (`styles.css`)
+
+---
+
